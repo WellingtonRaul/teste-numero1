@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações</title>
+    <link rel="shortcut icon" href="icone/logo-site.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estiloscss.css">
+</head>
+
+<body>
+    <header>
+        <h1>Anotações CSS</h1>
+        <nav>
+            <a href="csspag1.html" target="_self" rel="next">voltar página</a>
+            <a href="anotacaocss.html" target="_self" rel="next">página inicial</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Div e Pseudos Elementos</h2>
+        <p>
+            A div basicamente faz uma "preenchimento" da área que ela representa, seja por definições css ou tamanho de
+            texto, vídeos, áudio e etc. Quando você quiser dar uma configuração dentro da div por exemplo um paragrafo,
+            basta utilizar o seletor "div &gt; p {}", ele basicamente está dizendo que que o div tem um filho que é um
+            paragrafo. <br>
+            Os pseudos elementos servem para adicionar conteúdo no css, seja nos id ou classes você o expressa colocando
+            a teg que quer mudar e dois pontos(a::), exemplo se você quere adicionar uma seta no seu link basta colocar
+            a::before{content: '→';}, assim você adiciona uma seta, você mudar o fundo a cor da letra e entre outras
+            muitas coisas.
+        </p>
+        <h2>Tipos de caixas</h2>
+        <p>
+            tipos de caixas, nos temos os box-level, quando criado ele criar uma linha nova e ocupa toda a LARGURA da
+            tela e quando criado boxs desse mesmo tipo ele pula para a linha de baixo, outra característica é que ele
+            quebra as linhas quando colocado, a teg associado á ele é a &lt;div&gt;. <br>
+            A Inline-level eles são criados dentro da linha selecionada e diferente do box-level ele não ocupa 100% da
+            largura da tela ocupando somente a largura do conteúdo nele colocado, outra característica é que ele não
+            quebra a linha quando colocado assim sendo feito na mesma linha a teg associada á ele é a &lt;span&gt;
+            A teg &lt;span&gt; sereve para marca com uma caixo um trecho do texto.
+        </p>
+        <h2>Tegs border padding margin</h2>
+        <p>
+            A teg border serva para configurar as bodars das caixas, podendo definir o espaçamento cor e podendo
+            arrendorda as bordas entre outras configurações. Padding é o espaçamento da borda de dentro para fora, serve
+            para distanciar o conteúdo das bordas podendo trocar a cor entre outras configurações. Margin serve para
+            deixar as caixas longe umas das outras. todas as caixas tem configurações de posicionamento.
+        </p>
+        <h2>Tegs outline ouline</h2>
+        <p>
+            outilne serve como contorno das bordas podendo adicionar contornos personalizados ou importados. O o ouline
+            serva para adicionar uma linhas traçejadas entre outros tipos de linhas.
+        </p>
+        <h2>Shorthend</h2>
+        <p>
+            Você pode simplificar as programação usando a teg que você quer seja padding margin e outras, seguindo a
+            sequência top righ bottom e left, basta só colocar os números, exemplo: margin 10px 20px 40px 10px, se no
+            caso todas as configurações tenham a mesma medida basta colocar uma vez, exemplo: margin:10px assim faz que
+            todos da sequência tenham a mesma medida, se você colocar dois valores, exemplo: margin 10px 20px, ele
+            colocará o de cima e o de baixo como 10px e o da direita e esquerda como 20px. No caso do border e ouline
+            você pode simplificar utilizando esse sequência width style color.
+        </p>
+        <h2>Tegs nav section article e aside</h2>
+        <p>
+            Nav é onde você colocas links para navegaçãp seja no seu site ou para outros, nele você pode colocar seu
+            emil para contato botões links para vídeos downloads, em resumo é nele onde você vaiu colocar os linls que
+            você julga mais importantes. Teg section serva para criar sessões no seu site para devidir seu conteúdo,
+            temas ou outras funções. <br>
+            Article serve para criar artigos o nome já é intuitivo nele você pode sintentizar seus artigos ou de outro
+            pessoa. A tag &lt;aside&gt; do HTML é usada para criar uma seção de conteúdo que não está diretamente
+            relacionado ao conteúdo principal de uma página web. Esse conteúdo pode ser apresentado em uma barra lateral
+            (sidebar) e pode incluir:
+        <p>
+        <ul>
+            <li>Informações contextuais</li>
+            <li>Assuntos relacionados</li>
+            <li>Conteúdo publicitário</li>
+            <li>Navegação secundária</li>
+            <li>Definição de glossário</li>
+            <li>Avisos</li>
+            <li>Biografia do autor</li>
+            <li>Informações de perfil</li>
+            <li>Links de blogs relacionados</li>
+        </ul>
+        </p>
+        </p>
+        <h2>bordas personalizadas</h2>
+        <p>
+            Você pode criar suas próprias bordas basta pegar uma imagem de borda que você fez e colocar o seguinte
+            código:
+
+        <p>
+            <code>
+                     border-image-source: url('borda.png');
+                        border-image-slice: 27;
+                        border-image-repeat: repeat;
+                 </code>
+        </p>
+        </p>
+
+        <p>
+            Em border-image-source você seleciona a opção url e nela basta colocar entre aspas o nome do arquivo de
+            imagem que está sua borda, em border-image-slice: você seleciona o tamanho da sua imagem e em
+            border-image-repeat: você seleciona a opção repeat que basicamente vai repetir sua imagem várias vezes. Aqui
+            tembém temos como simplificar o código basta colocar na sequência que foi demonstrada no exemplo acima,
+            exemplo:
+
+        <p><code>border-image: url('borda.png') 27 repeat;</code></p>
+        </p>
+        <h2>Variáveis e transition-duration</h2>
+        <p>
+            Para colocar variáveis em css basta colocar a teg :root, quando for definir uma variável tem que colocar dois traços na frente, você pode fazer váriaveis de cores fontes entre outros, você precisa definir uma nome para definir a variável, exemplo:
+            <ul>
+                <li> --cores0:#c5ebd6;</li>
+                <li>--cores1:#83e1ad;</li>
+                <li>--cores2:#83e1ad;</li>
+                <li> --cores4:#1a5c37;</li>
+                <li>--cores5:#063d1e;</li>
+            </ul>
+        </p>
+        <p>No exemplo usamos cores toda vez que colocar em cores e arrastar para baixo vai aparecer todas as variáveis, no caso precise mudar todas as cores do site basta trocar a cor da variável que ele mudará todas as configurações que tenha aquela variável, isso serve para fontes também.
+        </p>
+        <p>
+            A teg transition-duration serve para definir o tempo de transição quando você passa o mouse em cima, isso serve para botões interativos links em geral qualquer coisa que você queira mudar o tempo de animação. 
+        </p>
+    </main>
+    <footer>
+        <a href="csspag1.html">voltar página</a>
+        <a href="anotacaocss.html">Página inicial</a>
+    </footer>
+</body>
+
+</html>

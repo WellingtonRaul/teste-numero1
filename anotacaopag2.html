@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotação</title>
+    <link rel="shortcut icon" href="icone/logo-site.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estiloshtml.css">
+</head>
+
+<body>
+    <header>
+        <h1>Anotações HTML</h1>
+        <nav>
+            <a href="anotacaopag1.html" target="_self" rel="prev">voltar página</a>
+            <a href="anotacao.html" target="_self" rel="prev">página inicial</a>
+            <a href="anotacaopag3.html" target="_self" rel="next">próxima página</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Teg strong e em</h2>
+        <p>A teg&lt;strong&gt; ser para colocar o texto em negrito,exemplo:<strong>casa</strong> <br>
+        <p class="codigo">
+            <code>
+                    &lt;strong&gt;casa&lt;/strong&gt;
+                </code>
+        </p>.
+        <p>Já &lt;EM&gt; serva para colocar o texto em itálico,exemplo: <em>casa</em></p>
+        <p class="codigo">
+            <code>
+                    &lt;em&gt;casa&lt;/em&gt;
+                </code>
+        </p>
+        </p>
+        <h2>Teg mark</h2>
+        <p>A teg &lt;mark&gt; serva para marca o texto igual a caneta marcadora,exemplo:<mark>casa</mark><br>
+        <p class="codigo">
+            <code>
+                        &lt;mark&gt;casa&lt;/mark&gt;
+                    </code>
+        </p>
+        </p>
+        <h2>Teg big e samall</h2>
+        <p>A teg &lt;big&gt; deixa o texto grande mas está obsoleta a teg, exemplo:<big> casa</big> </p>
+        <p class="codigo">
+            <code>
+                        &lt;big&gt;casa&lt;/big&gt;
+                    </code>
+        <p>Já a teg &lt;small&gt; serve para deixar o texto pequeno. </p>
+        <p class="codigo">
+            <code>
+                        &lt;small&gt;&lt;/small&gt;
+                    </code>
+        </p>
+        </p>
+        <h2>Teg start</h2>
+        <p>A teg &lt;start=""&gt; é uma teg que define de onde vai começar o número ou a letra da sua listas, sendo
+            letra ou número a teg start sempre define onde começa por números mesmo o type sendo letra ou número
+            romano,exemplo se você define sua lista e quer que começe pela letra D você coloca no start o número 4
+            porque a letra D é a quarta letra do alfabeto, exemplo: <br>
+        <ol start="4" type="A">
+            <li>fui buscar pão</li>
+            <li>Tomar café</li>
+            <li>Ir para a escola</li>
+        </ol>
+        Velá como o código é:
+        <p class="lista">
+            &lt;ol start="4" type="A"&gt; <br>
+            &lt;li>fui buscar pão&lt;/li&gt; <br>
+            &lt;li>Tomar café&lt;/li&gt; <br>
+            &lt;li>Ir para a escola&lt;/li&gt; <br>
+        </p>
+        </p>
+        <h2>Teg dl dt e dd</h2>
+        <p>A teg &lt;dl&gt; é para criar um litas de definições onde dentro dela usamos a teg &lt;dt&gt; que serve para
+            definir o termo que será usado na lista, também temos a deg &lt;dd&gt; que serva para escrever a definição
+            do termo que usamos na lista,exemplo: <br>
+        <dl>
+            <dt>Termo utilizado:<strong>HTML</strong></dt>
+            <dd>Definição do termo:<strong>Linguagem de marcação para a crição de um site</strong></dd>
+            <dt>Termo utilizado:<strong>CSS</strong></dt>
+            <dd>Definição do termo:<strong>Linguagem de marcação para a criação do desing de um site</strong></dd>
+            <dt>Termo utilizado:<strong>JAVASCRIPT</strong></dt>
+            <dd>Definição do termo:<strong>Linguagem de progamação para a criação de interatividade de um site</strong>
+            </DD>
+        </dl>
+        Vejá como o código é: <br>
+        <p class="codigo">
+            <code>
+                    <ul>
+                        <li>&lt;dl&gt;</li>
+                        <li>&lt;dt&gt;Termo utilizado:HTML&lt;/dt&gt;</li>
+                        <li>&lt;dd&gt;Definição do termo:Linguagem de marcação para a crição de um site&lt;/dd&gt;</li>
+                        <li>&lt;dt&gt;Termo utilizado:CSS&lt;/dt&gt;</li>
+                        <li>&lt;dd&gt;Definição do termo:Linguagem de marcação para a criação do desing de um site&lt;/dd&gt;</li>
+                        <li>&lt;dt&gt;Termo utilizado:JAVASCRIPT&lt;/dt&gt;</li>
+                        <li>&lt;dd&gt;Definição do termo:Linguagem de progamação para a criação de interatividade de um site&lt;/dd&gt;</li>
+                    </ul>
+                </code>
+        </p>
+        </p>
+        <h2>Link externo</h2>
+        <p>
+            A teg &lt;a&gt; serve para você colocar links de site externo e interno, para esse link não sobrepor seu
+            site você faz o seguinte: <br>
+        <p class="codigo">
+            <code>
+                &lt;a href="" target="_blank" rel="externo"&gt;
+             </code>
+        </p>
+        Em &lt;href=""&gt; você coloca o link, em target="" você coloca "_blank" para que ele tenha um alvo em uma
+        janela em branco e em &lt;rel="externo"&gt; você coloca externo para indicar que aquele é um link externo.
+        </p>
+        <h2>Link intreno</h2>
+        <p>
+            Para anexar um link intreno você utiliza a teg &lt;a&gt; mas a página que você criar tem que tá na mesma
+            página do seu index.html se no caso estiver em uma pasta basta colocar .// para voltar uma pasta. <br>
+            Quando criar links interno é sempre bom colocar na teg &lt;a&gt; o &lt;rel="next"&Gt; indicando que é a
+            próxima página, se for voltando uma página coloque prev,exemplo: <br>
+        <p class="codigo">
+            <code>
+                    &lt;a href="exemplo" rel="next" target="-self"&gt;próxima páginma&lt;/a&gt;
+                    &lt;a href="exemplo" rel="prev" target="-self"&gt;página anteriot&lt;/a&gt;
+                </code>
+        </p>
+        Colocando next para indicar próxima página e prev para indicar página anterior.
+        Também colocamos em &lt;target="-self"&gt; para indicar que esse link é no mesmo site.
+        </p>
+        <h2>link de empresa</h2>
+        <p>
+            Quando você for colocar um link de alguma expressa que você não é patrocinado você coloca no rel="nofollow"
+            para indicar que essa empresa não tem nada a ver com você. <br>
+        <p class="codigo">
+            <code>
+                &lt;a href=link da empresa" rel="nofollow"&gt;&lt;/a&gt;
+            </code>
+        </p>
+        </p>
+        <h2>Voltar pasta</h2>
+        <p>
+            Para voltar uma pasta você utiliza ../ isso indica que você está voltando,exemplo: <br>
+        <p class="codigo">
+            <code>
+                &lt;a href=".//exemplo/link que você quer"&gt;&lt;/a&gt;
+            </code>
+        </p>
+        </p>
+        <h2>link para download</h2>
+        <p>
+            Para colocar download no seu site você usa a teg &lt;a&gt; coloca o link para download, escreva
+            &lcy;download=""&gt; colocando o nome do arquivo que será baixado e também é necessario colocar tipo do
+            arquivo,colacando type="o tipo de arquivo" e coloca o o tipo do arquivo utilizando o link que está no site
+            <a href="paglink/links.html" target="_self" rel="prev">links</a> vejá o exemplo: <br>
+        <p class="codigo">
+            <code>
+                    &lt;a href="link do aquivo para download" download="nome do arquivo" &gt;&lt;/a&gt;
+                </code>
+        </p>
+        </p>
+    </main>
+    <footer>
+        <a href="anotacaopag1.html" target="_self" rel="prev">voltar página</a>
+        <a href="anotacao.html" target="_self" rel="prev">página inicial</a>
+        <a href="anotacaopag3.html" target="_self" rel="next">próxima página</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotação</title>
+    <link rel="shortcut icon" href="icone/logo-site.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estiloshtml.css">
+</head>
+<body>
+    <header>
+        <h1>Anotações HTML</h1>
+        <nav>
+            <a href="anotacaopag2.html" target="_self" rel="prev">voltar página</a>
+            <a href="anotacao.html" target="_self" rel="prev">página anicial</a>
+            <a href="" target="_self" rel="next">póxima página</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Teg img</h2>
+        <p>Para colocar imagens no site você utiliza a teg <picture> dentro da teg você coloca a teg &lt;img&gt; coloca a imagem em &lt;src="imagem escolida"&gt; dá a descrição da quele imagem em &lt;alt="descrição da imagem"&gt;. <br>
+            <p  class="codigo">
+                <code>
+                    &lt;picture&gt;
+                        &lt;img src="exemplo de imagem:casa.png" alt="descrição:casa"&gt;
+                    &lt;/picture&gt;
+                </code>
+            </p>
+            Também para seu site trocar o tamanho da imagem conforme o tamango da tela do dipositivo, você precisa de pelomes três imagens de tamanhos diferentes,sendo eles 350px para celular 750px para tabletes e 1050px para computador e televisão. <br> Para poder fazer isso você utiliza a teg &lt;source media type&gt; como pode ver no exemplo a seguir: <br>
+            <p  class="codigo">
+                <code>
+                    &lt;source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"&gt;
+                </code>
+            </p>
+            Onde em mídia você coloca o tamanho máximo da imagem, e em &lt;srcset="coloca a iamgem que você quer&gt;.Para fazer que seu site diminua a imegem conforma a tela do usuário você utiliza o seguinte código: <br>
+            <p  class="codigo">
+                <code>
+                    &lt;picture&gt;
+                        &lt;source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"&gt;
+                        &lt;source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"&gt;
+                        &lt;img src="imagens/foto-g.png" alt="imagem flexível"&gt;
+                    &lt;/picture&gt;
+                </code>
+            </p>
+            No exemplo temos os seguints imagens imagens/foto-g.png imagem de tamanho grande,imagens/foto-m.png imagem de tamanho médio,imagens/foto-p.png imagem de tamanho pequeno. <br>
+            Para fazer funcionar colocamos a teg  &lt;picture&gt; dentro colocamos a teg &lt;img&gt; e colocamos a imagem grande, seguida colocamos a teg  &lt;source media=""&gt; definimos o tamanho máxima da imagem grande, que é 1050px e colocamos em &lt;srcset=""&gt; a imagem pequena. Basicamente estamos falando que o tamanho máximo é 1050px e de caso a tela for menor que 1050px ele abrirar a imagem de tamnho médio,podemos ver essa mesma lógica na teg de cima, onde o tamanho máximo é 750px, se de caso a tela for menor abrirar a imagem pequena. assim seguindo uma sequência que a imagem maior fica em baixo depois a média e por ultimo a pequena.
+            </p>
+            <h2>Teg audio</h2>
+            <p>Para adicionar áudio no seu site basta usar a teg &lt;audio&gt; e colocar o aúdio da sua escolha,mas para funcionar você tem que usar a seguintes tegs: <br>
+                <p  class="codigo">
+                    <code>
+                        &lt;audio src="" controls autoplay&gt;&lt;/audio&gt;
+                    </code>
+                </p>
+                  O controls adiciona uma panel de controle onde você tem os controles básicos e o autoplay colocar para tocar sozinho. Formatos compativeis de áudio são eles: MP3 WAV OGG. obs: evite ao máximo usar o arquivo WAV porque ele é pesado. <br>
+                você também pode adicionar áudio abrindo e fechando a teg &lt&gt;audio&gt; escrevendo dentro tela a teg &lt&gt;source:src&gt; veja o exemplo: <br>
+                <p  class="codigo">
+                    <code>
+                        &lt;audio&gt;
+                        &lt;source src="exemplo.MP3" type="audio/mpeg3"&gt;
+                        &lt;/audio&gt;
+                    </code>
+                </p>
+             Quando você colocar a teg &lt;audio&gt; você delata o src="".Em type você coloca o tipo de aquirvo, sendo que em mp3 o tipo de arquivo é você audio/mpeg. <br>
+             Outro ponto a se relevar se por acaso você colocar os 3 formatos de áudio não funcionar no navegar da pessao isso significa que o navegador dela não suporta esses formatos de áudio, então colocamos um paragrafo em baixo de todos os formatos de áudio dentro ainda da teg &lt&gt;audio&gt; e coloca uma mensagem indicando que o navegador dela não suporta aúdio assim colocando um link para download do áudio, veja o exemplo: <br>
+                    <p  class="codigo">
+                        infelizmente seu navegador não consegue reproduzir áudio &lt;a href=exemplo de aúdio.mpe3" download="exemplo de aúdio"&gt; clique aqui para baixar o arquivo mp3&lt;/a&gt;
+                    </p>
+                </p>
+                <h2>Teg video</h2>
+                <p>para arquivos de vídeos temos 3 formatos compatíveis MP4 M4V WEBM OGV, você pode usar teg &lt;video&gt; e dar enter que ele dará a opção de colocar o vídeo, mas a forma recomendada é abrir e fechar a teg &lt;videos&gt; exemplo: <br>
+                    <p  class="codigo">
+                        <code>
+                            &lt;video&gt;&lt;/video&gt;
+                        </code>
+                    </p>
+                    Dentro dessa teg você coloca os vídeos que quer adicionar, lembrando que a ordem que você colocará será a ordem que o google vai ler, para você colocar os "botões" no vídeo basta colocar a teg controls entro da teg vídeo, exemplo: <br>
+                    <p  class="codigo">
+                        <code>
+                            &lt;víde controls&gt; &lt;/víde&gt;
+                        </code>
+                    </p>
+                  lembrando que para adicionar vídeos dentro da teg video, você utiliza a teg &lt;source:src&gt; você pode usar loop para deixar o vídeo rodando sem para e o autoplay para começar assim que entra na página, veja o exemplo: <br>
+                  <p  class="codigo">
+                    <code>
+                        &lt;video&gt;
+                        &lt;video controls autoplay loop&gt;
+                            &lt;source src="exemplo de video.mp4" type="video/mp4"&gt;
+                        &lt;/víde&gt;
+                    </code>
+                  </p>
+                  Você também pode adicionar uma thumb para seu vídeo basta colocar dentro da teg&lt;video poster="coloca a imagem que vai ser a thumb"&gt; assim colocando a imagem que você quer com thumb,veja o exemplo: <br>
+                  <p  class="codigo">
+                    <code>
+                        &lt;video poster="coloca a imagem que vai ser a thumb"&gt;
+                    </code>
+                  </p>
+                  <h3>Hospedar vídeos</h3>
+                   Colocar vídeos diiretamnte no seu site pesa muito para não pesar no seu site basta hospedar vídeos de outro site por exemplo o youtube, para pegar vídeos do youtube seu ou de outra pessoa, clique em compartilhar e importa, cópia o código e coloca ele no seu html. Se você não quiser que pessoas não vejam seu vídeos, por exemplo for um vídeo disponível só para assinantes, utilize o aplicativo vimeo, mas ele é pago, para pegar vídeos do vimeo é igual o do youtube.</p>
+                <audio src=""></audio>
+    </main>
+    <footer>
+        <a href="anotacaopag2.html" target="_self" rel="prev"> voltar página</a>
+        <a href="anotacao.html" target="_self" rel="prev">página anicial</a>
+        <a href="" target="_self" rel="next">póxima página</a>
+    </footer>
+</body>
+</html>

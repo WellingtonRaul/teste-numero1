@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --cor1:#8f8bfa31;
+    --cor2:#3f38fae1;
+    --cor3:#0800EB;
+    --cor4:#05009E;
+    --cor5:#04007C;
+    --cor6:#03005A;
+}
+
+body{
+    background-color:var(--cor1);
+}
+
+header{
+    background-color: var(--cor2);
+    margin: auto;
+    min-width: 300px;
+    background-image: linear-gradient(to BOTTOM,var(--cor4),var(--cor2));
+    padding: 20px;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.452);
+}
+
+
+header> h1{
+    color:white;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.9em;
+    font-weight: bolder;}
+nav{
+    padding: 10px;
+  
+}
+
+nav >a{
+    text-decoration: none;
+    padding: 6px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+nav >a:hover{
+    background-color: var(--cor1);
+    color:var(--cor6)
+}
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 20px;
+    padding: 40px;
+    margin:auto;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.178);
+}
+
+main >h2{
+    color: var(--cor5);
+    padding: 9px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 10px;
+    padding: 20px;
+    margin:auto;
+    box-shadow: 10px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    margin-bottom: 40px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+main p{
+    margin: 1px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+    padding: 0px;
+}
+
+ul{
+    color: var(--cor4);
+    padding: 40px;
+    font-size: 1.3em;
+}
+
+ol{
+    color: var(--cor4);
+    padding-left: 40px;
+    font-size: 1em;
+}
+
+p.codigo{
+    color: var(--cor4);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+p.lista{
+    color: var(--cor4);
+}
+
+footer{
+    background-color: var(--cor2);
+    padding: 10px;
+    min-width: 300px;
+
+    margin: auto;
+}
+footer >a{
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+footer >a:hover{
+    background-color: var(--cor3);
+    color:var(--cor6)
+}

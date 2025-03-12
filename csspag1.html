@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações</title>
+    <link rel="shortcut icon" href="icone/logo-site.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estiloscss.css">
+</head>
+
+<body>
+    <header>
+        <h1>Anotações CSS</h1>
+        <nav>
+            <a href="anotacaocss.html" target="_self" rel="next">página inicial</a>
+            <a href="csspag2.html" target="_self" rel="next">próxima página</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Hexadecimal e Hexacimal</h2>
+        <p>
+            Hexadecimal são dez algoritimos:0 1 2 3 4 5 6 7 8 9
+            Hexacimal sâo 16 algarismos representados como:0 1 2 3 4 5 6 7 8 9 a b c d e f
+        </p>
+        <h2>liner-gradiente</h2>
+        <p>
+            escreve dentro da teg head body{} coloque background opção image e escreve liner-gradiente, serve para criar
+            um gradiente, coloque as cores que você quer fazer um gradiente e a direção dele, se você selecionar a
+            direção top, ficará bugado
+        </p>
+        <h2>Teg Global *</h2>
+        <p>
+            serve para fazer uma configuração global do seu css, nele você coloca, como exemplo dexar seu site com
+            padding 10px margin de 10px entre outras configurações.
+        </p>
+        <h2>Teg Main Footer e Header</h2>
+        <p>
+            A teg main significa que tudo que está dentro dela é o conteúdo principal assim podendo separar-la para
+            configuarar.
+            A teg footer é o rodapé do site, nela você pode colocar como exemplo o nome de quem criou o site. A teg
+            header, se um temos temos um roda pé também temos o cabeçalho, nela você pode colocar o título botões
+            interativos barras de pesquisas entre outras opções.
+        <h2>Tegs Width Padding e Margin</h2>
+        <p>
+            width serve para definir a largura seja das caixas do seun site entre outos usos. A teg padding é o
+            espaçamento em relação a borda a borda, serve para deixar mais espaçado os seus texto, vídeos, aúdios entre
+            outros.
+        </p>
+        <h2>Box-shodow</h2>
+        <p>
+            A teg box-shadow serve para colocar sombras nas boxs,veja um exemplo &lt;box-shadow: 10px 10px 10px 10px
+            10px
+            black;&gt; a sequência dos 10px cada um significa uma direção, dada na seguinte sequência: cima direita
+            baixo
+            esquerda, o quinto da sequência e o espalhamento da sombra, e black é a cor da sombra, você também pode
+            colocar um valor ele fará que todas as outras direções tenham mesmo valor, também você pode colocar dois
+            valores, sendo o primeirop valor definindo cima e baixo e o segundo valor definindo direita e esquerda. <br>
+            Clicando na cor que você adicionou você pode trocar ela para rbg e rgba e também mudar sua transparencia
+            isso serve para quando você adicionar cores em qualquer teg.
+        </p>
+        <h2>Safe Combinations</h2>
+        <p>Quando for colocar fontes no seu site tem que levar em conta que existem alguns aparelhos que não existem
+            aquela fonte, sendo as mais utilizadas Arial, Helvetica, sans-serif quando você coloca várias opções de
+            fontes o google irá utilizar a primeira e se não reconhecer irá utilizar a segunda e assim por diante. Esse
+            tipo de combinação é chamada de safe combination são combinações de fontes normalmente parecidas que pode
+            ter em todos os aparelhos. O visual studio code já dá safe combinations mas ele não mostra todos que
+            existem. Para colocar uma fonte é sempre bom saber a altura do corpo da fonte.
+        </p>
+        <h2>Fonte Serifadas</h2>
+        <p>
+            Fontes sarifadas são aquelas que possuem "traços em sua base como perninhas".Se colocar em
+            &lt;font-Family=""&gt; e escrever sans-serif, serif, monospace ele colocará qualquer fonte sem serifa com
+            serifa ou mono espaçada que ele achar.
+        </p>
+        <h2>Medidas Absolutas e Peso</h2>
+        <p>
+            No <font-size=""> temos medidas absolutas e relativas, nas medidas absolutas temos cm, mm, in, px, pt e pc,
+                como o nome diz elas são medidas que representam exatamente o número a qual foi definido. As medidas
+                relativas são elas: em, ex, rem, vlw, vh, e %, essas medidas são relativas ao tipo de medida que foi
+                atribuída á ela. Pelo w3c é recomendado utilizar as medidas px e em.
+                As fontes tem pesos isso define se a fonte vai ser mais fino ou mais espeça a teg utilizada para colocar
+                peso na fonte é <font-weight: ;> existem três pesos mas aceitos são eles: loghter, normal, bol e bolder,
+                    outra forma de definir o poso basta usar números que vão de 100 á 900.
+        </p>
+        <h2>Itálico e Negrito</h2>
+        <p>
+            Você pode usar teg font-style: ; para definir se o texto será em itálico negrito ou sublinhado, podemos
+            colocar em sublinhado utilizando a teg &lt;text-decoration:underline;&gt; um ponto interessante a ser
+            relevar é que nem toda Fontes permitem tantas configurações então preste atenção.
+        </p>
+        <h2>Shorthend Das Tegs Font</h2>
+        <p>
+            Para simplificar essas configurações podemos utilizar um shorthand font que basicamente serve para condensar
+            todas as configurações em um código, assim utilizando a teg font e colocando as configuração em uma
+            sequência, sendo ela: o style primeiro weight segundo siz e terceiro e por ultimo Family, nessa sequência
+            você não é obrigado a colocar todas configurações por exemplo não quero definir o meu style é só não colocar
+            nada e continuar a sequência.
+        </p>
+        <H2>Fontes Externas</H2>
+        <P>para colocar uma fontes externa tem criar uma regra chamada @font-face ela dará várias opções em src: url ()
+            você coloca o nome do arquivo da fonte depois do parênteses você coloca format() nele você coloca uma
+            determinada opção em relação ao tipo de formato da fonte, exemplo: ser otf você coloca opentype ser for ttf
+            coloca e ser for truetype-att você oloca apple advanced typography, também tomos o svg.
+        </P>
+        <h2>Alinhamento de textos</h2>
+        <p>
+            Para alinhar o texto utilizamos a teg text-align ai definimos centro esquerda direita e justifica que alinha
+            com a esquerda e a direita, também temos a teg text-indent onde damos aquela espaçamento no começo do texto,
+            aquele que aprendemos na escola.
+        </p>
+        <h2>Class e Id</h2>
+        <p>
+            De caso você tenha vários h1 e um em especifico você quer que tenha uma coinfiguração diferente basta
+            colocar um identificador utilizando dentro da teg que você quer modificar ,exemplo: &lt;h1 id="coloque aqui
+            o nome do identificador"&gt;, para colocar esse identificador dentro do css você coloca (h1# aqui o nome do
+            identificardor) em css você não precisa colocar a teg que aquele identificador referencia, basta colocar # e
+            o nome do identificador. Outro ponto interessante é que o indetificador em html é id já em css é #. Dentro
+            do html você não pode usar o mesmo id mais de uma vez. <br>
+            As class difentes dos indetificador você pode usar quantas vezes quiser e também atribuir várias classes
+            para a mesma teg, também podendo colocar class e id juntos. Para colocar classe basta abrir a teg e colocar
+            na frente, exemplo: &lt;h1 class="aqui coloca o nome da class que você deseixar" &gt;. As clas em css são
+            representas como ponto, exemplo: (h1 .nome de class {}).
+        </p>
+        <h2>Pseudos Classes</h2>
+        <p>
+            As pseudos classes serve para adicionar uma característica especial em elementos e classe, exemplo se você
+            quer que um determinado texto esteja invisível e só seja visto quando passa o mouse por cima você utiliza
+            pseudos classes, veja o exemplo:
+        <p>
+            <pre>
+                <code>
+                    div:hover{
+                        color: red;
+                    }
+                     div > p {
+                        display: none;
+                    }
+                    div:hover > p {
+                        display: block;
+                        color: white;
+                        background: red;
+                    }
+                     </code>
+            </pre>
+        </p>
+        </p>
+    </main>
+    <footer>
+        <a href="anotacaocss.html">página inicial</a>
+        <a href="csspag2.html">próxima página</a>
+    </footer>
+</body>
+
+</html>
