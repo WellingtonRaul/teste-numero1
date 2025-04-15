@@ -109,19 +109,159 @@
         </p>
         <h2>Variáveis e transition-duration</h2>
         <p>
-            Para colocar variáveis em css basta colocar a teg :root, quando for definir uma variável tem que colocar dois traços na frente, você pode fazer váriaveis de cores fontes entre outros, você precisa definir uma nome para definir a variável, exemplo:
-            <ul>
-                <li> --cores0:#c5ebd6;</li>
-                <li>--cores1:#83e1ad;</li>
-                <li>--cores2:#83e1ad;</li>
-                <li> --cores4:#1a5c37;</li>
-                <li>--cores5:#063d1e;</li>
-            </ul>
+            Para colocar variáveis em css basta colocar a teg :root, quando for definir uma variável tem que colocar
+            dois traços na frente, você pode fazer váriaveis de cores fontes entre outros, você precisa definir uma nome
+            para definir a variável, exemplo:
+        <ul>
+            <li> --cores0:#c5ebd6;</li>
+            <li>--cores1:#83e1ad;</li>
+            <li>--cores2:#83e1ad;</li>
+            <li> --cores4:#1a5c37;</li>
+            <li>--cores5:#063d1e;</li>
+        </ul>
         </p>
-        <p>No exemplo usamos cores toda vez que colocar em cores e arrastar para baixo vai aparecer todas as variáveis, no caso precise mudar todas as cores do site basta trocar a cor da variável que ele mudará todas as configurações que tenha aquela variável, isso serve para fontes também.
+        <p>No exemplo usamos cores toda vez que colocar em cores e arrastar para baixo vai aparecer todas as variáveis,
+            no caso precise mudar todas as cores do site basta trocar a cor da variável que ele mudará todas as
+            configurações que tenha aquela variável, isso serve para fontes também.
         </p>
         <p>
-            A teg transition-duration serve para definir o tempo de transição quando você passa o mouse em cima, isso serve para botões interativos links em geral qualquer coisa que você queira mudar o tempo de animação. 
+            A teg transition-duration serve para definir o tempo de transição quando você passa o mouse em cima, isso
+            serve para botões interativos links em geral qualquer coisa que você queira mudar o tempo de animação.
+        </p>
+        <h2>Configuraões do Background img</h2>
+        <p>Na Teg background img você pode adicionar as imagens que quiser basta clicar control espaço que ele dará o
+            caminho para chegar na pasta, você também pode colocar background url e colocar o link de uma imagem que
+            achar na web.
+            A teg background-size define o tamanho das imagens, ele também tem duas opões que é o auto que vem como
+            padrão o contenti que sempre tenta exibir a imagem todo mesmo que crie espaços em branco nas laterais ou em
+            cima, muito visto em vídeos, e também o cover que vai fazer a imagem ocupar a tela toda mesmo que tenha que
+            cortar alguns pedaços. <br>
+            A teg background-repeat tem várias configurações, de caso coloque a opção no-repeat ele não repitirá as
+            imagens independente do tamanho, a opção reapeat x e y, o x repetirá a imagem indo para os lados e o y
+            repetirá as imagens para baixo e para cima. <br>
+            A teg background-position serve para posicionar onde você quer que a a imagem fique, sendo elas as posições
+            emcima embaixo centro, podendo usar duas direções ao mesmo tempo como direita emcima esquerda embaixo entre
+            outros.
+        </p>
+        <h2>heigth Vh e width Vw</h2>
+        <p>Utilizar vh significa vew port, que é o tamanho da tela do sei aparelho, se você por exemplo definir
+            heigth:"50vh"; significa que a box que você associou a teg, vai ocupar 50 porcento da tela, essa analogia
+            também é utilizada para o vw, lembrando que você colocar vh em width não vai funcionar e vise e versa.
+        </p>
+
+        <h2>A Teg Backgropund-attachment</h2>
+        <p>
+            A teg backgropund-attachmentt dá várias opções para o seu background, sendo eles uma que faz ele rolar junto
+            com o conteúdo com a opção scroll, também tendo a opção dele não rolar junto com fundo e o deixando fixo, na
+            opção fixed, para funcionar direito você tem que deixar seu background-size com a opção cover.
+        </p>
+
+        <h2>background shorthand</h2>
+        <p>
+            Para as teg background existe uma shorthand e ela segue essa sequência color >image >position
+            >repeat>(size)>attacment,vale ressaltar que o size não está funcionando possa ser que uma atualização futura
+            isso seja resolvido, então você não o coloca dentro da shorthand.
+        </p>
+
+        <h2>Alinhamento usando transform</h2>
+        <p>
+            Para alinhar verticalmente um box basta você tem que deixar a box que está fora com um alinhamento relativo
+            e a box de dentro que é a que você quer alinhar tem que deixar absoluto isso utilizando as teg
+            position,quando você deixar uma box com o posicionamento absoluto você libera duas opções para alinhar que é
+            o left e top, nela você pode mover a caixa para a posição que quiser, mas você quer alinhar no meio do da
+            box, para isso você vai utilizar a teg transform na opção translate nela você pode colocar dois valores que
+            vão indicar a rideração o primeiro é direita se o valor for negativo com -10px ele irá para esquerda, o
+            segundo valor vai para baixo ser for negativo ele vai para cima, Para definir que ele fique no meio você
+            colocará -50%, -50% assim ele entenderá que você quer que ocupe 50% da esquerda e 50% da direita assim fará
+            que ele centralize.
+        </p>
+        <h2>Configuraões das linhas</h2>
+        <p>
+            As configurações das linhas se define pela teg line, nela como exemplo você pode usar a teg line-heigth que
+            define a altura das linhas assim as espaçando umas das outras para cima.
+        </p>
+
+        <h1>Tabela</h1>
+        <h2>Construção de Tabela simples</h2>
+        <p>
+            Todas as tabelas simples em html segue essa seguinte hierarquia primeiro &lt;table &gt;dentro de table temos
+            o table row que significa linha de tabela, dentro do table row temos também o table header cabeçalho de
+            tabla e table data que é os dados da tabela. O table row tem como teg &lt;tr&gt; e o tabole header tem como
+            teg &lt;th&gt; e o table data tem como teg &lt;td&gt;. <br>
+
+            Para colocar bordar na sua tabela você utiliza a teg border nos seus dados (Teg &lt;td&gt;), podeno definir
+            como exemplo 1px solid black, para deixar as linhas das
+            bordas juntas basta utilizar a teg border-collapse e utilizar a opção colapse, os fechamentos dessas tegs
+            não é obrigatório
+            Para alinhar sua table pode ser usado a teg text-aling para alinhar horizontalmente e para alinhar
+            verticalmente
+            utilizamos a teg vertical-aling depois só usar o alinhamento que desejar, um ponto para se lembrar que para
+            alinhar ao centro dessa teg não é utilizando center e sim o opção middle. <br>
+        </p>
+
+        <h2>Construção de Tabela Grandes</h2>
+        <p>
+            Anatomia para tabelas grandes, dentro do table temos em primeiro o &lt;caption&gt; que é a legenda da tabela
+            temos
+            também o &lt;thead&gt; dentro dessa teg podemos ter tr td th, também temos o &lt;tbody&gtdot; dentro dessa
+            teg podemos ter tr td th e o &lt; tfoot&gt; que podemos ter dentro dele a seguintes tegs
+            ter tr td th. <br>
+            Se você quiser indicar que o th que você fez é o título da coluna utilizamos dentro da teg &lt;th
+            scope="col"&gt;
+            essa opção indica que é o título daquela coluna, se você quer indicar que aquele th é o título da linha
+            basta utilizar a teg
+            &lt;th scope="row"&gt; isso indica que é o título daquela linha. Se de casso seu título abranja mais de uma
+            coluna
+            utulizamos
+            &lt;th scope="colgruos"&gt; e se ele ocupar mais de uma linha utilizamos
+            &lt;th scope="row"&gt;, mas isso só vale se os dados que ele reverencia estar em mais de uma linha ou
+            colunas. <br>
+
+        <h2>Efeito Zebrado</h2>
+
+        <p>
+            Para fazer um efeito zebrado na sua tabela utilizamos a pseudo-classe :nth-child() dentro da parênteses
+            colocamos em quantas linhas ele vai pular, basta colocar 2n, 3n ,4n e assim por diante, também pode
+            definir que as linhas seram puladas em números impar ou pares utilizando oddo para impar e even para par,
+            não esquece
+            de colocar a cor de fundo para fazer o efeito, claro essa pseudo-classe não faz só isso ele faz uma
+            formatação pulando as linhas determinadas, basta que aja um cenário para utiliza-la de outros formas. <br>
+            Outra coisa a se atentar que se quisermos que a tabela tenha um efeito zebrado de branco e preto,
+            colocaremos o branco com impar e o par como preto por exemplo, ai que está uma confusão o seu site virá como
+            padrão a cor de fundo branco de caso você não defina a cor de fundo porque já está branco, quando decidir
+            colocar uma cor diferente de branco, sua tabela ficará dessa cor, porque se não definimos a cor da tabela
+            ela tomará a cor do site como base, então lembre de definir a cor da tabela.
+        </p>
+
+        <h2>Fixar Cabeçalho e mesclar células</h2>
+        <p>
+
+            Para fixar seu cabeçalho primeiro temos que deixar o posicionamento da tabela relativo depois criamos a
+            seguinte sequência thead >tr >th {} dentro do coxete colocamos o position sticky que é para deixar
+            grudado e o top:0; isso significa que ela vai colocar na parte 0, vale lembrar que essa configuração não
+            funciona em todos os navegadores. <br>
+
+            Para fazer que uma célula ocupe duas colunas utilizamos dentro da teg td a sequinte opção
+            &lt;td colspan="2"&gt; o dois indica a quantidades de colunas que ele ocupará se quiser que ele ocupe mais
+            colunas basta aumentar o valor. Para fazer que a célula ocupe mais de uma linha utilizamos a seguinte teg
+            &lt;td rowspan="3"&gt; lembrando quando você for comer outra linha você tem que exclui-la ou já fazer a
+            montagem
+            da tabela pensando nas células que vão ocupar determinados números de linhas e colunas.
+        </p>
+
+        <h2>Cor de Colunas e Rolagem Lateral</h2>
+        <p>
+            Aprendemos como configurar e editar as linhas, mas se eu quiser por exemplo deixar as colunas uma de
+            cada cor? para isso basta utilizar a teg &lt;colgrup&gt; nela colocamos as tegs
+            &lt;col&gt; onde colocamos as mesmas quantidade de colunas que temos na nossa tabela, nisso podemos
+            definir diferentes classes ou id para cada coluna, e editar no css colocando (col.nome da classe
+            aqui), mas de casso eu querer que uma classe ou id muda duas colunas de uma vez para isso do lado da
+            classe colocamos a teg &lt;span="2"&gt; onde o número é a quantidade de colunas que queremos editar. <br>
+            Quando sua tabela é grande de mais ela cria uma rolagem lateral para resolver isso envelopamos
+            sua tabela com uma div, coloque id o class do nome que quiser e vamos utilizar a teg css
+            overflow, essa teg configura todo o conteúdo que transborda do seu site, nela utilizaremos o
+            overflow-x que configura a rolagem horizontal , nela selecionaremos a opção auto e pronto nessa
+            teg temos outras configurações mas nesse casso já é o suficiente.
         </p>
     </main>
     <footer>
