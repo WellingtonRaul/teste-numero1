@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="shortcut icon" href="icone/logo-site.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/estiloshtml.css">
 </head>
+
 <body>
     <header>
         <h1>Anotações HTML</h1>
@@ -18,86 +20,311 @@
     </header>
     <main>
         <h2>Teg img</h2>
-        <p>Para colocar imagens no site você utiliza a teg <picture> dentro da teg você coloca a teg &lt;img&gt; coloca a imagem em &lt;src="imagem escolida"&gt; dá a descrição da quele imagem em &lt;alt="descrição da imagem"&gt;. <br>
-            <p  class="codigo">
-                <code>
+        <p>Para colocar imagens no site você utiliza a teg <picture> dentro da teg você coloca a teg &lt;img&gt; coloca
+                a imagem em &lt;src="imagem escolida"&gt; dá a descrição da quele imagem em &lt;alt="descrição da
+                imagem"&gt;. <br>
+                <p class="codigo">
+                    <code>
                     &lt;picture&gt;
                         &lt;img src="exemplo de imagem:casa.png" alt="descrição:casa"&gt;
                     &lt;/picture&gt;
                 </code>
-            </p>
-            Também para seu site trocar o tamanho da imagem conforme o tamango da tela do dipositivo, você precisa de pelomes três imagens de tamanhos diferentes,sendo eles 350px para celular 750px para tabletes e 1050px para computador e televisão. <br> Para poder fazer isso você utiliza a teg &lt;source media type&gt; como pode ver no exemplo a seguir: <br>
-            <p  class="codigo">
-                <code>
+                </p>
+                Também para seu site trocar o tamanho da imagem conforme o tamango da tela do dipositivo, você precisa
+                de pelomes três imagens de tamanhos diferentes,sendo eles 350px para celular 750px para tabletes e
+                1050px para computador e televisão. <br> Para poder fazer isso você utiliza a teg &lt;source media
+                type&gt; como pode ver no exemplo a seguir: <br>
+                <p class="codigo">
+                    <code>
                     &lt;source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"&gt;
                 </code>
-            </p>
-            Onde em mídia você coloca o tamanho máximo da imagem, e em &lt;srcset="coloca a iamgem que você quer&gt;.Para fazer que seu site diminua a imegem conforma a tela do usuário você utiliza o seguinte código: <br>
-            <p  class="codigo">
-                <code>
+                </p>
+                Onde em mídia você coloca o tamanho máximo da imagem, e em &lt;srcset="coloca a iamgem que você
+                quer&gt;.Para fazer que seu site diminua a imegem conforma a tela do usuário você utiliza o seguinte
+                código: <br>
+                <p class="codigo">
+                    <code>
                     &lt;picture&gt;
                         &lt;source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"&gt;
                         &lt;source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"&gt;
                         &lt;img src="imagens/foto-g.png" alt="imagem flexível"&gt;
                     &lt;/picture&gt;
                 </code>
-            </p>
-            No exemplo temos os seguints imagens imagens/foto-g.png imagem de tamanho grande,imagens/foto-m.png imagem de tamanho médio,imagens/foto-p.png imagem de tamanho pequeno. <br>
-            Para fazer funcionar colocamos a teg  &lt;picture&gt; dentro colocamos a teg &lt;img&gt; e colocamos a imagem grande, seguida colocamos a teg  &lt;source media=""&gt; definimos o tamanho máxima da imagem grande, que é 1050px e colocamos em &lt;srcset=""&gt; a imagem pequena. Basicamente estamos falando que o tamanho máximo é 1050px e de caso a tela for menor que 1050px ele abrirar a imagem de tamnho médio,podemos ver essa mesma lógica na teg de cima, onde o tamanho máximo é 750px, se de caso a tela for menor abrirar a imagem pequena. assim seguindo uma sequência que a imagem maior fica em baixo depois a média e por ultimo a pequena.
-            </p>
-            <h2>Teg audio</h2>
-            <p>Para adicionar áudio no seu site basta usar a teg &lt;audio&gt; e colocar o aúdio da sua escolha,mas para funcionar você tem que usar a seguintes tegs: <br>
-                <p  class="codigo">
-                    <code>
+                </p>
+                No exemplo temos os seguints imagens imagens/foto-g.png imagem de tamanho grande,imagens/foto-m.png
+                imagem de tamanho médio,imagens/foto-p.png imagem de tamanho pequeno. <br>
+                Para fazer funcionar colocamos a teg &lt;picture&gt; dentro colocamos a teg &lt;img&gt; e colocamos a
+                imagem grande, seguida colocamos a teg &lt;source media=""&gt; definimos o tamanho máxima da imagem
+                grande, que é 1050px e colocamos em &lt;srcset=""&gt; a imagem pequena. Basicamente estamos falando que
+                o tamanho máximo é 1050px e de caso a tela for menor que 1050px ele abrirar a imagem de tamnho
+                médio,podemos ver essa mesma lógica na teg de cima, onde o tamanho máximo é 750px, se de caso a tela for
+                menor abrirar a imagem pequena. assim seguindo uma sequência que a imagem maior fica em baixo depois a
+                média e por ultimo a pequena.
+        </p>
+        <h2>Teg audio</h2>
+        <p>Para adicionar áudio no seu site basta usar a teg &lt;audio&gt; e colocar o aúdio da sua escolha,mas para
+            funcionar você tem que usar a seguintes tegs: <br>
+        <p class="codigo">
+            <code>
                         &lt;audio src="" controls autoplay&gt;&lt;/audio&gt;
                     </code>
-                </p>
-                  O controls adiciona uma panel de controle onde você tem os controles básicos e o autoplay colocar para tocar sozinho. Formatos compativeis de áudio são eles: MP3 WAV OGG. obs: evite ao máximo usar o arquivo WAV porque ele é pesado. <br>
-                você também pode adicionar áudio abrindo e fechando a teg &lt&gt;audio&gt; escrevendo dentro tela a teg &lt&gt;source:src&gt; veja o exemplo: <br>
-                <p  class="codigo">
-                    <code>
+        </p>
+        O controls adiciona uma panel de controle onde você tem os controles básicos e o autoplay colocar para tocar
+        sozinho. Formatos compativeis de áudio são eles: MP3 WAV OGG. obs: evite ao máximo usar o arquivo WAV porque ele
+        é pesado. <br>
+        você também pode adicionar áudio abrindo e fechando a teg &lt&gt;audio&gt; escrevendo dentro tela a teg
+        &lt&gt;source:src&gt; veja o exemplo: <br>
+        <p class="codigo">
+            <code>
                         &lt;audio&gt;
                         &lt;source src="exemplo.MP3" type="audio/mpeg3"&gt;
                         &lt;/audio&gt;
                     </code>
-                </p>
-             Quando você colocar a teg &lt;audio&gt; você delata o src="".Em type você coloca o tipo de aquirvo, sendo que em mp3 o tipo de arquivo é você audio/mpeg. <br>
-             Outro ponto a se relevar se por acaso você colocar os 3 formatos de áudio não funcionar no navegar da pessao isso significa que o navegador dela não suporta esses formatos de áudio, então colocamos um paragrafo em baixo de todos os formatos de áudio dentro ainda da teg &lt&gt;audio&gt; e coloca uma mensagem indicando que o navegador dela não suporta aúdio assim colocando um link para download do áudio, veja o exemplo: <br>
-                    <p  class="codigo">
-                        infelizmente seu navegador não consegue reproduzir áudio &lt;a href=exemplo de aúdio.mpe3" download="exemplo de aúdio"&gt; clique aqui para baixar o arquivo mp3&lt;/a&gt;
-                    </p>
-                </p>
-                <h2>Teg video</h2>
-                <p>para arquivos de vídeos temos 3 formatos compatíveis MP4 M4V WEBM OGV, você pode usar teg &lt;video&gt; e dar enter que ele dará a opção de colocar o vídeo, mas a forma recomendada é abrir e fechar a teg &lt;videos&gt; exemplo: <br>
-                    <p  class="codigo">
-                        <code>
+        </p>
+        Quando você colocar a teg &lt;audio&gt; você delata o src="".Em type você coloca o tipo de aquirvo, sendo que em
+        mp3 o tipo de arquivo é você audio/mpeg. <br>
+        Outro ponto a se relevar se por acaso você colocar os 3 formatos de áudio não funcionar no navegar da pessao
+        isso significa que o navegador dela não suporta esses formatos de áudio, então colocamos um paragrafo em baixo
+        de todos os formatos de áudio dentro ainda da teg &lt&gt;audio&gt; e coloca uma mensagem indicando que o
+        navegador dela não suporta aúdio assim colocando um link para download do áudio, veja o exemplo: <br>
+        <p class="codigo">
+            infelizmente seu navegador não consegue reproduzir áudio &lt;a href=exemplo de aúdio.mpe3" download="exemplo
+            de aúdio"&gt; clique aqui para baixar o arquivo mp3&lt;/a&gt;
+        </p>
+        </p>
+        <h2>Teg video</h2>
+        <p>para arquivos de vídeos temos 3 formatos compatíveis MP4 M4V WEBM OGV, você pode usar teg &lt;video&gt; e dar
+            enter que ele dará a opção de colocar o vídeo, mas a forma recomendada é abrir e fechar a teg &lt;videos&gt;
+            exemplo: <br>
+        <p class="codigo">
+            <code>
                             &lt;video&gt;&lt;/video&gt;
                         </code>
-                    </p>
-                    Dentro dessa teg você coloca os vídeos que quer adicionar, lembrando que a ordem que você colocará será a ordem que o google vai ler, para você colocar os "botões" no vídeo basta colocar a teg controls entro da teg vídeo, exemplo: <br>
-                    <p  class="codigo">
-                        <code>
+        </p>
+        Dentro dessa teg você coloca os vídeos que quer adicionar, lembrando que a ordem que você colocará será a ordem
+        que o google vai ler, para você colocar os "botões" no vídeo basta colocar a teg controls entro da teg vídeo,
+        exemplo: <br>
+        <p class="codigo">
+            <code>
                             &lt;víde controls&gt; &lt;/víde&gt;
                         </code>
-                    </p>
-                  lembrando que para adicionar vídeos dentro da teg video, você utiliza a teg &lt;source:src&gt; você pode usar loop para deixar o vídeo rodando sem para e o autoplay para começar assim que entra na página, veja o exemplo: <br>
-                  <p  class="codigo">
-                    <code>
+        </p>
+        lembrando que para adicionar vídeos dentro da teg video, você utiliza a teg &lt;source:src&gt; você pode usar
+        loop para deixar o vídeo rodando sem para e o autoplay para começar assim que entra na página, veja o exemplo:
+        <br>
+        <p class="codigo">
+            <code>
                         &lt;video&gt;
                         &lt;video controls autoplay loop&gt;
                             &lt;source src="exemplo de video.mp4" type="video/mp4"&gt;
                         &lt;/víde&gt;
                     </code>
-                  </p>
-                  Você também pode adicionar uma thumb para seu vídeo basta colocar dentro da teg&lt;video poster="coloca a imagem que vai ser a thumb"&gt; assim colocando a imagem que você quer com thumb,veja o exemplo: <br>
-                  <p  class="codigo">
-                    <code>
+        </p>
+        Você também pode adicionar uma thumb para seu vídeo basta colocar dentro da teg&lt;video poster="coloca a imagem
+        que vai ser a thumb"&gt; assim colocando a imagem que você quer com thumb,veja o exemplo: <br>
+        <p class="codigo">
+            <code>
                         &lt;video poster="coloca a imagem que vai ser a thumb"&gt;
                     </code>
-                  </p>
-                  <h3>Hospedar vídeos</h3>
-                   Colocar vídeos diiretamnte no seu site pesa muito para não pesar no seu site basta hospedar vídeos de outro site por exemplo o youtube, para pegar vídeos do youtube seu ou de outra pessoa, clique em compartilhar e importa, cópia o código e coloca ele no seu html. Se você não quiser que pessoas não vejam seu vídeos, por exemplo for um vídeo disponível só para assinantes, utilize o aplicativo vimeo, mas ele é pago, para pegar vídeos do vimeo é igual o do youtube.</p>
-                <audio src=""></audio>
+        </p>
+
+        <h2>Hospedar vídeos</h2>
+
+        Colocar vídeos diiretamnte no seu site pesa muito para não pesar no seu site basta hospedar vídeos de outro site
+        por exemplo o youtube, para pegar vídeos do youtube seu ou de outra pessoa, clique em compartilhar e importa,
+        cópia o código e coloca ele no seu html. Se você não quiser que pessoas não vejam seu vídeos, por exemplo for um
+        vídeo disponível só para assinantes, utilize o aplicativo vimeo, mas ele é pago, para pegar vídeos do vimeo é
+        igual o do youtube.</p>
+
+        <H2>Iframe</H2>
+
+        <h3>Criando seu iframe</h3>
+        <p>
+            Iframe podem criar janelas virtuais dentro do seu site, como exemplo posso criar uma janela que mostre outro
+            site como se fosse um "anuncio". para podemos usar um iframe usamos a teg &lt;iframe src=""
+            frameborder="0">&lt;/iframe &gt;, os iframe tem como tamanho padrão 300x150px. Vale lembrar que alguns sites
+            tem proteções para o seu site não ser exibido em iframe no site de terceiros. Nem todos os navegadores são
+            compatíveis com os iframe então colocamos dentro das duas tegs uma mensagem avisando que o navegador não é
+            compatível ou colocamos o link do site abordado &lt;iframe src="" frameborder="0" &gt; VOCÊ VAI COLOCAR AQUI
+            DENTRO &lt;/iframe &gt;. <br>
+            Você também pode adicionar suas próprias páginas dentro de um iframe é só clicar com control espaço ou usar
+            ..
+            //
+            Se você quiser que quando clicarmos um link no seu site ele abra dentro do iframe basta você colocar um nome
+            dentro do seu iframe usando a teg name="" e no link que você quer que abra nesse iframe basta colocar target
+            e
+            coloca o nome do que você definiu usando a teg name
+        </p>
+
+        <h3>Rolagem lateral e borda</h3>
+        <p>
+
+            De casso você não queira que seu iframe crie uma rolagem lateral basta usar a teg scolling="no" isso não o
+            deixará criar rolagem lateral, mas esta função não funciona em muitos navegadores isso inclui o google.
+            No frameborder não meche na borda independe do valor que colocar para isso você faz uma configuração normal
+            de borda usando o css.
+        </p>
+
+        <h3>thumbnail do iframe e proteção do iframe</h3>
+        <p>
+
+            Quando você inicia sua página o seu iframe está vazio para resolver isso vai em src e coloca um arquivo que
+            você quer apareça primeiro para ser exibido, mas você também pode usar a teg srcdog na teg iframe nela você
+            pode colocar
+            um código html podendo colcar títulos, parágrafos e imagens como se fosse uma html normal, mas todas
+            as tegs tem que estar uma do lado das outras sem espaçamento <br>.
+            Para proteger seu site quando usamos um iframe e colocamos um site suspeito que possa acabar roubando dados
+            basta usar dentro do
+            iframe a teg &lt;sandbox="sandbox"&gt; isso não permite que você execute funções dentro do site. Se quiser
+            deixar
+            ainda mais seguro basta usar outra teg chamada &lt;referrerpolicy="no-referer"&gt; a teg tem com função tudo
+            que estiver dentro do iframe não vai pegar nenhum dado do usuário. Também existe o cenário que você
+            quer que o outro site possa pegar dados do usuário como em um cadastro basta colocar as seguintes
+            configurações sandbox="allow-same-origin allow-forms allow-scripts" essa tegs significa que se o site
+            for do mesmo servidor ele está permitido scripts e formulários
+        </p>
+
+        <h2>Formulário</h2>
+
+        <h3>Criando sei formulário</h3>
+
+        <p>
+            Para criar um formulário utilizamos a teg form dentro dela colocamos um parágrafo e colocamos a opção a ser
+            preenchida como: nome, endereo, número etc.. na frente de cada opção dentro do parágrafo colocamos a teg
+            input-text e colocamos o nome e um id nessa teg, todo formulário tem o botão para enviar então criamos outro
+            parágrafo e colocamos o imput-submit e escrevemos dentro das aspas na opção value="(Enviar)". Para você
+            fazer que o parágrafo escrito nome tenham uma ligação com o campo onde você escreve, basta envelopar o text
+            com a teg label e em for="" você coloca o nome do seu id do campo correspondente.
+            Se você quiser tirar aquele caixa que aparece toda vez que clica em um campo do formulário basta ir na teg
+            form e colocar autocomplete="off".A diferença entre name e id é que em php e html o name é mais aceito e o
+            id é mais aceito em javascript.
+        </p>
+
+        <h3>get e post</h3>
+
+        <p>
+            No html existe duas maneiras de mandar dados de formulários que é o Get e Post, sendo que por padrão vem o
+            get, a diferença entre eles é que o get manda os dados pelo a url do seu site e suporta um volume de dados
+            menor não sendo recomentado para formulários grandes ou que orecisem mandar imagens e outros arquivos, já o
+            post faz tudo que op get não faz tendo uma capacidade bem maior de enviaos de dados, mas quando eu devo
+            utilizar os métodos o get e post? O get você utiliza quando seus dados não forem sensíveis como senhas
+            e-mails entre outros dados, ele também não é adequado para envio de fotos, vídeos áudios e outros formatos
+            de arquivos outra coisa a se avisar que o get só aceita enviar dados abaixo de três mil baytes acima disso
+            ele não funciona. O método de Post consegue fazer tudo que foi dito que o get não consegue fazer.
+        </p>
+
+        <h3>Configurando os campos</h3>
+
+        <p>
+            Se prestar atenção você pode enviar um formulário sem preencher os dados necessários, para obrigar o usuário
+            a preencher esses dados primeiros basta colocar no input a opção required assim ele não conseguirá enviar
+            seus dados sem primeiro preencher os campos obrigatorios. <br>input de senha para fazer esse input é só
+            colocar a teg e
+            selecionar a opção passaword. Se você quiser colocar uma quantidade máxima e mínima de caracteres e só
+            colocar dentro da teg o minlength="" colocar o mínimo e maxlength="" e colocar o máximo. <br>
+            Também pode se
+            colocado um size para aumentar o tamanho da caixa, mas esse size é diferente o valor colocado será a
+            quantidade de letras que é visualizada na caixa , isso não significa que ele limita a quantidade de letras
+            que cabe lá, oque limita é o maxlength oque seria isso, quando você escreve um determinado número de
+            caracteris ele pula para linha de baixo, oque o size faz é controlar esse limite. <br>
+            Temos a opção de dar uma dica do que escrever dentro da caixa para isso utilizamos a teg placeholder=""
+            dentro excrevemos a dica que queremos dá, como o campo é de endereço na dica colocamos a fraze escreva seu
+            endereço aqui. <br>
+            Autocomplete ser para mostrar ao usuario a senha e endereço que você tenha coloca para facilitar sua
+            vida para isso, no form colocamos o autoclete no on e dentro do input colocamos o autoclete e selecionamso a
+            opção que aquele campo significa como name passaword e outros. <br>
+            Você pode colocar um campo de mês basta usar a teg input type="month", De caso o campo que está no seu
+            formulário você quer que ele já esteja preenchido com algum número basta colocar a teg value="" e definir um
+            número. <br>
+        </p>
+
+        <h3>checbook e teg fieldset</h3>
+
+        <p>
+            Para fazer um campo que você marca por exemplo o esportes que você gosta, basta usar o input de checbook que
+            criará campos para marcar as opções que desejar.
+            De caso você quer criar um campo que quando você marque um o outro não marca como escolher um gênero, basta
+            usar o input radio, mas perceberá um problema quando você marca os campos o outro não desmarca, para
+            resolver isso basta colocar o nome dos campos iguais, não cofunda com o id, isso não funciona no checkbok.
+            Se você quiser que um os campos de marcação já tenha um campo marcado, é só ir no campo que você deseja e
+            coloca checked dentro do input.
+            Você pode envelopar um grupo de campos com a teg fieldset dentro dele você pode usar a teg legend para
+            colocar uma legenda dentro do seu grupo isso serve para manter uma organizaão melhor no seu site.
+        </p>
+
+        <h3>input color range file image</h3>
+
+
+        <p>
+            temos tabém o input chamdo file ele você pode fazer que o usuario mande uma foto, vale lembrar que também
+            tem o input chamado imagem mas nele quem define a imagem é você não o usuário, lembrando que o método
+            utilizado tem que ser o post.
+            Tem como coloca um um input para cor é só selecionar a opção color, pode definir uma cor inicial usando o
+            value e colocar o código de cor que deseja,
+            Tem como colocar um input que coloca uma barra que você pode definir o nível de satisfação ou outras
+            coisas que precisem de definir um nível, para isso é só usar o imput range, dentro dele você pode definir o
+            numero mínimo da barra e o número máximo, você pode definir onde a barra vai começar no meio no fim ou no
+            começo, para isso é só colocar um valor no value, lembrando que o a barra tem como número de 0 a 100.
+            Tanto o range como o color pode não ser reconhecido por alguns navegadores.
+        </p>
+
+        <h3>criando um campo de seletor</h3>
+
+        <p>
+            Se quiser criar um campo de de opções para selecionar basta usar a teg select e colocar a teg option dentro
+            dela, nessa teg você coloca o nome das opções que você quer colocar nesse seletor, isso tudo dentro da teg
+            from, se quiser que as opções sejam separadas dentro do seletor basta usar a teg optgruop e colocar um label
+            com o nome do grupo, isso dividirá as opções, fará que você crie um grupo e dentro dele estará as opções que
+            estiver dentro, você também pode marcar uma opção para ser a primeira aparecer basta colocar dentro de
+            option a teg selected,
+            podemos também como exemplo fazer uma campo onde você escreva sua profissão e que de sugestões de
+            outros profissões, para isso criamos um input de text e logo abaixo colocamos a teg datlist dentro dela
+            colocamos a teg option e colocamos as outras opções de profissões, para que essas opções aparem no campo de
+            profissões basta colocar dentro da teg datalist um id e colocamos o name e definirmos um nome a sua escolha,
+            depois dentro da teg input
+            colocamos a teg list e colocamos o nome do id que escolhemos.
+        </p>
+
+
+        <h3>textarea e calculadora</h3>
+
+        <p>
+            Se no casso você quer que seu usuário tenham um campo para digitar basta usar a teg textarea nela vai dar
+            opção de name e id coloque oque desejar, mas em cols="" você define quantas colunas você quer que apareça e
+            em rows="" você define quantas linhas você quer que apareça,
+            Você pode fazer uma calculadora dentro do seu formulário basta colocar dois campos do tipo number e por
+            exemplo sendo chamados de número 1 e número 2, depois colocamos um id neles como in1 in2, depois criamos
+            um label como por exemplo com o nome de soma, logo abaixo dele colocamos uma teg chamada output dentro dela
+            colocamos um id, por exemplo isoma depois disso dentro do input colocamos esse código
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)"
+        </p>
+
+        <h2>Media Quewry</h2>
+
+        <p>
+            Para fazer uma media quewry para impressora criamos um link css e dentro do link colocamos a teg
+            media="print" tem como definir a media query da tela do seu site e basicamente o link css que você fazia só
+            com media="screem" no final.
+            A media query é igual a media &lt;type = media filtre&gt;,
+            Você pode fazer um css para telas em modo retrato ou em paisagem, basta usar no link css media="screen and
+            (orientation portrait)" retrato e media="screen and (orientation landscape)" paisagem, o nome dessa
+            configuração é media filtre que é basicamente uma característica do media type.
+            Se você quiser todas as configurações de media no mesmo css, basta usar a declaraão @media screen and
+            (orientation:portrait){} e @media screen and (orientation:landscape){} dentro do coxete colocamos as
+            configurações que desejamos para cada media types, lembrando quando você colocar todas as declarações de
+            media dentro de um css, não precisa colocar a teg media dentro do link css.
+            Typical Device Breskpointy é um tremo utilizado para definir os tamanhos de telas dos aparelhos, mas ele
+            sempre está em atualização porque as telas vão mudando com tempo,
+            Você pode colocar diferente css para diferentes tamanhos de tala basta usar as tegs media screen and ("tamanho
+            mínimo da tela") and ("tamanho máximo da tela"), no casso de telas de televisões você pode coloca só o
+            tamanho mínimo porque tv podem ser de diferentes tamanhos podendo ser gigantescas, para você saber os
+            tamanhos de cada telas basta pesquisar por Typical Device Breskpointy.
+            Quer aprender a fazer menu? vê o vídeo do modulo 4 aula 12 media query para outros dispositivos.
+            A teg float mexe no posicionamento do display block.
+            Todas as transformações e transições você coloca por ultimo no seletor
+        </p>
+
+
     </main>
     <footer>
         <a href="anotacaopag2.html" target="_self" rel="prev"> voltar página</a>
@@ -105,4 +332,5 @@
         <a href="" target="_self" rel="next">póxima página</a>
     </footer>
 </body>
+
 </html>
