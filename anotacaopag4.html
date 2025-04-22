@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotação</title>
+    <link rel="shortcut icon" href="icone/logo-site.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estiloshtml.css">
+</head>
+
+<body>
+    <header>
+        <h1>Anotações HTML</h1>
+        <nav>
+            <a href="anotacaopag2.html" target="_self" rel="prev">voltar página</a>
+            <a href="anotacao.html" target="_self" rel="prev">página anicial</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Flex</h2>
+        <h3>Colanco um item em flex e denindo as configuraões</h3>
+        <p>
+            Para fazer que os itens da sua flex box ocupem todo sue container, basta colocar o cointainer com display
+            flex e o item flex auto.
+
+            Você pode mudar a direção do seu flex box basta usar a teg flex-direction o row da esrqueda para direita e
+            row-reverse o contrário também temos o column que é em coluna e o column-reverse é ao contrário. quando der
+            um flex-direction: row o main-axis vai da esquerda para direita e o cross-axis vai de cima para baixo, mas
+            quando colocamos o row-reverse; ele inverte todos os sentidos citados. Também temos os eixos das felx-boxs
+            chamados de axi, Quando o felx-direction for collumn o main=axis vai de cima para baixo e o cross-axis vai
+            da esquerda para direita, quando usarmos o column-reverse ele vai inverter esses sentidos. <br>
+            O Felx-wrap serve para definir se os itens dentro do container vão quebrar ou não quando o container for
+            menos
+            que os itens dentro dele, no casso se você coloca flex-wrap="now-wrap" ele não vai quebrar o container mas
+            vai espremer os itens até o ponto máximo que ele conseguir, mas se você colocar flex-werap="wrap" ele vai
+            quebrar os itens no sentido do cross-axis, levando em conta que o cross-axis esteja no padrão ele vai
+            quebrar para baixo, temos também o flex=wrap="wrap-reverse" ele vai quebrar no sentido ao contrário ao
+            cross-axis. <br>
+            tem como simplificar todos esses códigos usando a teg flex-flow se o você definir o flex-direction em row e
+            o flex-wrap em nowrap, basta usar os dois em flex-flkow="row nowrap";
+            O encolhimento dos itens dentro de uma flex-box vai depender muito do conteúdo dentro deles.
+        </p>
+        <h3>Propriedades do containers</h3>
+        <p>
+            O justify-content alinha em relação ao o seu main-axis o seu main-axis tem dois pontos importantes que é o
+            main-strat que o inicio do seu container e o main-end o fim do seu container, temos como definir vários
+            valpores no seu justfy-conten: felx-star faz que o primeiro item fique colado no main-start e o espaço em
+            branco fique do lado do main-end, também temos o justfy-content:flex-end ele faz a mesma do coisa do outro
+            só que ao contrário o primeiro no main-end e o ultimo no main-start. <br>
+
+            justfy-conten:center coloca os itens alinhados ao centro. <br>
+
+            justfy-conten:space-betwwen: ele vai colocar o primeiro item no main-strat e o ultimo item no main-end e
+            todos os outros itens alinhados ao centro com o espaçamento entre eles iguais. <br>
+
+            justfy-conten:space-evenly: ele coloca todos os itens com espaçamento iguais e não coloca o primeiro e
+            ultimo itens colados. <br>
+
+            justfy-conten:space-around: ele vai pegar a quantidades de itens definidos dentro de seu container e dividir
+            eles igualmente dentro do espaço disponível do seu container, sendo que todos os itens vão ter um
+            espaçamento dos dois lados, um começo e fim. <br>
+
+            align-items alinha em relação ao cross-axis ele também tem o cross-start e cross-end segue a mesma lógica do
+            main-start e main-end só que em cross-axis, temos os seguintes valores. <br>
+
+            align-items:stretch ele está definido como padrão no cross-axis, basicamente ele faz é esticar os itens
+            quando o cross-axis é aumentado. <br>
+
+            align-items:flex-strat ele faz que os itens grudem no cross-strat. <br>
+
+            align-items:flex-end ele faz que os itens grudem no cross-end.
+
+            align-items:center ele alinha os itens ao centro do seu eixo cross-axis, deixando um espaçamento. <br>
+
+            css flexible box module <br>
+
+            O justfy-content vai alinhar os itens dentro do eixo principal o align-items vai alinhar os itens dentro do
+            eixo transversal ou cross e o align contente vai os itens no eixo transversal mas só quando estão
+            empacotados. <br>
+
+            Align-content:stretch: se o seu conteúdo quebrar em duas linhas ou colunas o align-content vai pegar altura
+            e dividir em duas partes iguais, se quebrar em três linhas ele vai dividir em três partes iguais e assim por
+            diante, depois ele vai colocar os elementos dentro e vai puxar os elementos para que eles ocupem o tamanho
+            total das linhas criadas. Esse é o formato padrão quando colocar essa teg. <br>
+
+            align-content:flex-start ele vai pegar todos os elementos e colocar grudados no cross-start deixando um
+            espaço em branco em baixo. <br>
+
+            align-conten:flex-end: ele vai pegar todos os elementos e colocar grudados no cross-end. <br>
+
+            align-content:center: ele vai alinhar os itens ao centro deixando um espaçamento no eixo main-axis. <br>
+
+            Nos align-content ele também tem as mesma configurações do justfy que são elas o space-betwwen, space-evenly
+            e o space-around, vão funcionar do mesmo jeito o que muda que agora eles vão trabalhar no eixo cross-axis.
+            <br>
+        </p>
+        <h3>Propriedades dos itens</h3>
+        <p>
+            Quando você cria containers flexíveis a parte de fora é flex e a de dentro não é flex. <br>
+
+            Order todo item dentro do container vai ter order 0 por padrão , ele serve para você definir qual caixa vai
+            aparecer primeiro sempre em ordem crescentes sendo que número negativos conta,por exemplo o -1 vem antes do
+            1, para definir uma order, vai na caixa que você deseja, como uma div, artcle ou outros e coloca
+            style="order:COLOQUE O NÚMERO AQUI;" e pronto, sendo que você pode fazer isso dentro do css, basta definir
+            uma classe ou id para a caixa que você quer repocionar na frente. <br>
+
+            align-self ela se aplica a cada um dos itens ele vai funcionar indiretamente no croos-axis. <br>
+
+            align-self:auto: esse valor vai herdar a característica vertical do container, seja ela o align-conten ou
+            align items. <br>
+
+            align-self:flex-start: o alinhamento perto do start. <br>
+
+            align-self:flex-end: o alinhamento perto do end. <br>
+
+            align-self:centre: o alinhamento a centro. <br>
+
+            aln-self:strech:vai ocupar o espaço inteiro. <br>
+
+            Fle-basis:auto é definido o tamanho dos itens pelo eixo principal é definido pelo tamanho do seu container.
+            <br>
+
+            No flex-basis você pode definir o valor dele colocando um valor na frente, exemplo: felx-bosis:200px levando
+            em consideração , se você definir como nowrap o itens vão manter o valor definido em relação ao tamanho do
+            container, se você definir uma valor maior que o container ele vai diminuir e se adaptar ao container, não
+            importa o valor definido. <br>
+
+            flex-shrink: basicamente diminui e flex-grow aumenta, por padrão o flex-shrink:1 o felx-grow:0 se o shrink
+            estiver 1 e o grow 0 significa que o item associado a ele pode encolher, se for definir o shrink e grow como
+            1, ignifica que o item pode encolher e aumentar, podemos definir outros valores nessas tegs, por exemplo
+            tenho um item grow 0 o do meio com 1 e o ultimo com 0, oque vai acontecer é que os dois de zero não vão
+            crescer mais o de 1 vai, e se definirmos valores como 0 1 2, simples o zero não cresce mais no casso do 1 e
+            2, o número dois vai crescer o dobro do 1 porque 2 é o dobro de 1, mais quando dois itens te o valor de 2
+            por, exemplo? O erro é achar que só porque é 2 que é o dobro, nesse caso como os valores são iguais, os dois
+            vão crescer igualmente, todos os exemplos que dei a respeito do grow, são aplicados seguindo a mesma lógica
+            no shrink. <br>
+
+            Nos temos uma shorthand para configuração flex, basta escrever flex e seguir a seguinte sequência,
+            flex=grow, flex-shrink e flex basis. <br>
+
+            Nos temos alhumas tegs para simplinficar alguns padrões usados no flex, como flex: 0 1 auto, pode ser
+            simplificado como flex:initial, temos também: flex: 0 0 auto, podemos simplificar como, felx:none, outro que
+            temos é o flex: 1 1 auto que simplificado fica flex: auto, além desse temos outro como flex:(qualquer valor)
+            quando colocado um número dentro do flex, ele define o flex-grow somente, temos a simplificação dele desse
+            jeito: flex 3 1 auto. <br>
+        </p>
+        <h3>Anotomia do Grid</h3>
+        <p>
+
+            Todo grid é baseado em container, grid container, todo "quadrado" formado pelo grid é dado o nome de grid
+            item. <br>
+            Quando se tem vários itens em sequência que comecem no começo até o fim da grade, tanto na horizontal como
+            na vertical, é chamado de grid track, quando a track está deitada é chamada de track row, e quando está em
+            pé é chamada de track column.
+            As linhas que temos que marcam todo o grid tanto em pé como deitado é chamado de grid lines, para definir a
+            primeira linha é simples eles começam da esquerda para direita, e as linhas deitadas são contadas de cima
+            para baixo. A numeração das linhas podem ser negativas basta olhas o sentido de contagem ao inverso
+            Quando temos um agrupamento de linhas sejam elas na vertical ou horizontal chamamos de grid área
+            Entre seus itens da sua grid temos um espaço que pode ser configurado esse espaço se chama grid gap, nesse
+            espaço ou gap podemos definir o tamanho dele, esses espaçamento não afeta o tamanho do seus itens.
+        </p>
+
+            <h3>PROPRIEDADES DO CONTAINER DO GRID</h3>
+
+            <ul>
+                <li>diplay br</li>
+                <li>grid-template-columns</li>
+                <li>grid-template-rows</li>
+                <li>grid-gap</li>
+            </ul>
+
+            <p>
+                para criar um grid container, basta colocar display:grif; dentro de algum componente/teg no seus css que ele
+                vira um grid container, exemplo podemos criara uma div com a class container e outra div com a class item,
+                dentro da div.container colocamos display:grid; para virar um grid e também podemos colocar outro teg
+                grid-tamplete-columns: auto auto isso significa que seu grid vai ter duas colunas, também podemos colocar
+                outra configuraão colocando a teg grif tamblete rows:100px 100px; isso vai fazer que duas linhas tenham de
+                altura de 100px, temos outra teg para ser colocada dentro de seu container como o grid gap:20px; que vai
+                definir o espaçamento do seu grid de 20px.
+            </p>
+                    </main>
+    <footer>
+        <a href="anotacaopag2.html" target="_self" rel="prev"> voltar página</a>
+        <a href="anotacao.html" target="_self" rel="prev">página anicial</a>
+    </footer>
+</body>
+
+</html>
