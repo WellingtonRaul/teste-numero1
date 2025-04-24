@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de tegs</title>
+    <link rel="stylesheet" href="estilos/teste.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <h1>teste</h1>
+        <!--crir uma linha-->
+        <hr>
+        <p>
+            <img src="imagens/foda.jpg" alt="foda">
+            <!--teg para colocar o significado da apreviação-->
+            <abbr title="Filha Da puta">fdp</abbr> <br>
+            <strong>Lorem </strong><br>
+            <em>PIROCA</em> <br>
+            <mark>ROLA</mark> <br>
+            <small>BUCETA</small>,
+            <a href="https://www.twitch.tv/settings/profile" target="_blank">foda de mais</a> <br>
+
+            <!--Link pora download-->
+
+            <a href="imagens/foda.jpg" download="foda">baixe o arquivo de imagem</a> <br>
+
+            <picture>
+                <img src="imagens/muito fod.webp" alt="">
+            </picture>
+
+            <!--Criando o iframe-->
+
+        <h2>teste 1</h2>
+        <iframe src="imagens/foda.jpg" frameborder="1" name="caralho" scolling="no">Seu navagador não é
+            compativel</iframe>
+
+        <!--fazendo um link abrir em um iframe-->
+
+        <h2>teste 2</h2>
+        <iframe src="anotacaocss.html" frameborder="0"></iframe> <br>
+        <a href="index.html" target="caralho">clique aqui iframe</a>
+
+        <!--Srcdoc-->
+
+        <h2>teste 3</h2>
+        <iframe src="" frameborder="1" name="tiframe"
+            srcdoc=" <h1>olá</h1><p>Aqui aparecerá o seu iframe quando clicar no link</p>"></iframe> <br>
+        <a href="anotacaopag1.html" target="tiframe" rel="next">Clique aqui para abrir o iframe</a>
+
+        <h2>Formulário</h2>
+
+        <form action="post" autocomplete="on">
+
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required autocomplete="cc-name"
+                        placeholder="Escreva seu Nome" size="30"> <br>
+                <p>Sexo</p>
+                <label for="im"> <input type="radio" name="marcador" id="im" checked>Masculino</label> <br>
+                <label for="if"><input type="radio" name="marcador" id="if">Feminino</label>
+                <br>
+                <label for="iidade">Idade:</label>
+                <input type="number" name="idade" id="iidade" autocomplete="bday-year" placeholder="Escreva sua Idade"> <br>
+
+                <label for="profissao">profissão:</label>
+                <select id="profissao" name="profissao">
+                    <option value=""disabled selected hidden>Selecione sua profissão</option>
+                  <optgroup label="Profissões Técnicas">
+                    <option value="tecnico-informatica">Técnico em Informática</option>
+                    <option value="tecnico-eletronica">Técnico em Eletrônica</option>
+                    <option value="tecnico-edificacoes">Técnico em Edificações</option>
+                  </optgroup>
+                  <optgroup label="Profissões na Área de Atletismo">
+                    <option value="atleta-profissional">Atleta Profissional</option>
+                    <option value="treinador-atletismo">Treinador de Atletismo</option>
+                    <option value="fisioterapeuta-esportivo">Fisioterapeuta Esportivo</option>
+                  </optgroup>
+                </select>
+                <br>
+
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email"
+                    placeholder="Escreva seu E-mail"> <br>
+
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required maxlength="6" minlength="4"autocomplete="new-password" placeholder="Coloque Sua Senha"> <br>
+
+                <label for="idata">Mês:</label>
+                <input type="date" name="data" id="idata" value="2001-08-12">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereo</legend>
+                <p>
+                    <label for="irua">Rua:</label>
+                    <input type="text" name="rua" id="irua" autocomplete="address-line1" size="20">
+
+                    <label for="ibairro">Bairro:</label>
+                    <input type="text" name="Bairro" id="ibairro" autocomplete="address-level2">
+                    
+                    <label for="iestado">Estado:</label>
+                    <input type="text" name="Estado" id="iestado" autocomplete="on">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Marque os hobbis que você faz</legend>
+                <p>
+                    <label for="iesportes">Esportes</label>
+                    <input type="checkbox" name="hobby" id="iesportes">
+
+                    <label for="imusica">musíca</label>
+                    <input type="checkbox" name="hobby" id="imusica">
+
+                    <label for="iarte">Arte</label>
+                    <input type="checkbox" name="hobby" id="iarte">
+
+                    <label for="itec">Tecnologia</label>
+                    <input type="checkbox" name="hobby" id="itec">
+
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Fale maius sobre você</legend>
+                <textarea name="area" id="iframe" cols="90" rows="20"></textarea>
+            </fieldset>
+           
+            <fieldset>
+                <legend>Mande uma foto sua</legend>
+                <p>
+                    <label for="img">Coploue a imagem aqui:</label>
+                    <input type="file" name="img" id="img">
+                    
+                    <input type="image" src="imagens/foda.jpg" alt="foda"> <br>
+
+                    <label for="icor">Escolher uma cor:</label>
+                    <input type="color" name="cor" id="icor" value="#ff0000"> <br>
+
+                    <label for="istf">Escolher seu nivel de satisfação</label>
+                    <input type="range" name="stf" id="istf" value="0"> <br>
+
+                    <!--P código da div basicamente diz que o valor do isamo e igual a soma do in1 mais o in2-->
+
+                    <p>Calcule:</p>
+                    <div oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+
+                        <label for="in1">Número 1:</label>
+                        <input type="number" name="n1" id="in1" >
+
+                        <label for="in2">Número 2:</label>
+                        <input type="number" name="n2" id="in2">
+
+                        <label for="isoma">Soma:</label>
+                        <output name="soma" id="isoma">0</output>
+                    </div>
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
