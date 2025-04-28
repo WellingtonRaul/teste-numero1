@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        @charset "utf-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    background-color: rgba(0, 24, 131, 0.247);
+
+
+    display: flex;
+/*direção dos itens*/
+     flex-direction: row;
+     /*direção da quebra dos itens*/
+     flex-wrap: wrap;
+     /*isso é uma simplificaão do código acima*/
+     flex-flow: row;
+}
+
+div{
+    background-color: aqua;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+
+    flex: auto;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div>teste1</div>
+        <div>teste2</div>
+        <div>teste3</div>
+        <div>teste4</div>
+        <div>teste5</div>
+        <div>teste6</div>
+
+    </main>
+</body>
+</html>

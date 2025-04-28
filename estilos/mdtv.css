@@ -1,0 +1,36 @@
+@charset "utf-8";
+@media screen and (min-width: 1680px) {
+
+    
+    
+    body{
+        background-color: rgba(0, 128, 0, 0.329);
+    }
+
+    header{
+        background-color: green;
+        color: white;
+     
+    }
+
+    a{
+        color: white;
+    }
+
+
+    main{
+        width: 60vw;
+        margin: auto;
+    }
+
+    main >h2{
+        color: darkgreen;
+    }
+
+
+    footer{
+        background-color: green;
+        color: white;
+    
+    }
+}
